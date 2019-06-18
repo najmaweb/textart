@@ -1,0 +1,33 @@
+/* Some globals */
+@import url(https://fonts.googleapis.com/css?family=Codystar:300);
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+
+/* Body background */
+body::after {
+	content: attr(data-bg);
+  /*content: "My text"; if not using js*/
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #ff0078;
+	overflow-y: hidden;
+	text-align: justify;
+	speak: none;
+	font-family: 'Codystar', cursive;
+	font-size: 80px;
+	color: #ff90c4;
+}
+
+/* Just an example layout */
+div {
+	text-align: center;
+	padding: 40px;
+	color: #191919;
+}
