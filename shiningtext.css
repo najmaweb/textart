@@ -7,33 +7,79 @@ body {
   height: 100vh;
   background-color: #000;
 }
+#main{
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 div.profile {
-  color: whitesmoke;
+  color: red;
   text-align: center;
   font-size: 30px;
+  font-family: profil;
 }
 div.juleha {
   position: relative;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: myFirstFont;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 4em;
   letter-spacing: 4px;
   overflow: hidden;
-  background: linear-gradient(90deg, #000, #fff, #000);
+  background: linear-gradient(180deg, #F00, #fff);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 3s linear infinite;
+  animation: animate 3s linear;
+  animation-iteration-count: 1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   text-align: center;
 }
 div.dpd {
-  color: red;
+  color:chartreuse;
   text-align: center;
   font-size: 50px;
-  background: -webkit-linear-gradient(red, white);
+  font-family: tangak;
+  /*background: -webkit-linear-gradient(red, white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.video{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 500px;
+  z-index: 0;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(libs/sunday/Sunday-Regular.ttf);
+}
+
+@font-face {
+  font-family: tangak;
+  src: url(libs/tangak.otf);
+}
+
+@font-face {
+  font-family: profil;
+  src: url(libs/20db.otf);
+}
+
+div.x {
+  font-family: myFirstFont;
 }
 @keyframes animate {
   0% {
